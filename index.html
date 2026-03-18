@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <font color="purple" size="6">
+        <title> Formulario inscripción </title>
+        </font>
+    </head>
+    <body bgcolor="#E8F0FE">
+        <H1>Formulario de inscripción</H1>
+        <center>
+        <form>
+            <fieldset>
+            <label for="tipo documento">Tipo de documento:</label>
+    
+            <select name="Tipo documento" id="tipo de documento" required>
+
+                <option value="" disabled selected hidden></option>
+
+                <option value="CC">CC</option>
+      
+                <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+      
+                <option value="Registro civil">Registro civil</option>
+      
+                <option value="Tarjeta de Extranjería">Tarjeta de Extranjería</option>
+      
+            </select>
+            <br><br>
+            Documento de identidad: <INPUT TYPE="number" NAME="documento de identidad" minlength="3" MAXLENGHT=12 SIZE= 15 pattern="[0-9]+" required><BR>
+                <br>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <br>
+            Nombres:<INPUT TYPE="text" NAME="nombres" minlength=3 MAXLENGHT=64 SIZE=15 pattern="[A-Za-zÁ-ú\s ]+" required><BR>
+                <br>
+            Apellidos: <INPUT TYPE="text" NAME="apellidos" minlength="3" maxlength="64" pattern="[A-Za-zÁ-ú\s ]+" required><br>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <br>
+            Dirección: <INPUT TYPE="text" NAME="direccion" MAXLENGHT=50 SIZE=20 required><BR>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+            <br>
+            Teléfono: <INPUT TYPE="number" NAME="telefono fijo" required><br>
+            <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <br>
+            Correo: <INPUT TYPE="email" NAME="correo" pattern="[A-Za-z0-9._-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" required><br>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <br>
+            Usuario: <INPUT TYPE="text" NAME="usuario" minlength="3" MAXLENGHT=16 pattern="[A-Za-z]{3,14}[0-9]{0,2}" required><br>
+                <br>
+            Password: <INPUT TYPE="text" NAME="password" pattern="(?=.*[A-Z])(?=(.*[a-z]){2,})(?=(.*[0-9]){5,})[A-Za-z0-9!?\-+/&$]{16}" required><br>
+                <br>
+                <br>
+                <br>
+            Fecha inscripcion: <INPUT TYPE="date" NAME="fecha" min="2026-02-15" max="2026-03-06" required><br>
+                <br>
+                <br>
+                <br>
+            <label for="Hobbies">Hobbies:</label>
+    
+            <select name="Hobbies" id="Hobbies" required>
+
+                <option value="" disabled selected hidden></option>
+
+                <option value="Leer">Leer</option>
+      
+                <option value="Música">Música</option>
+      
+                <option value="Deportes">Deportes</option>
+      
+                <option value="Programar">Pogramar</option>
+      
+            </select>
+            <br><br>
+        <INPUT TYPE="submit" NAME="enviar" VALUE="Enviar">
+        <input type="submit" name="enviar" value="Limpiar">
+        </FORM>
+        </center>
+    </body>
+</html>
